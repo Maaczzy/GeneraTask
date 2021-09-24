@@ -30,7 +30,7 @@ header{
     background-color: white;
     padding: 5%;
     border: 1px solid rgb(235, 235, 235);
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     text-align: center;
 }
 
@@ -87,4 +87,16 @@ header{
     color: whitesmoke;
     text-align: left;
     padding: 2% 5%;
+}
+
+#subject{
+    width: 100%;
+    background-color: white;
+    color: #00C2A9;
+    text-align: left;
+    border: none;
+}
+
+.custom-control-label{
+    padding-left: 3%;
 }
