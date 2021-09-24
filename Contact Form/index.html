@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genera Contact Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -36,13 +39,16 @@
                     </div>
                     <hr class="line">
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Full Name">
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Full Name"
+                            required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter VALID EMAIL and check the result">
+                        <input type="email" id="email" class="form-control" id="formGroupExampleInput"
+                            placeholder="Enter VALID EMAIL and check the result" required>
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Phone e.g.: +363012345">
+                        <input type="number" class="form-control" id="formGroupExampleInput"
+                            placeholder="Enter Phone e.g.: +363012345" required>
                     </div>
                     <hr class="divider">
                     <div class="form-heading">
@@ -60,13 +66,14 @@
                     </div>
                     <hr class="line">
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown button
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown button
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
                     <hr class="divider">
@@ -85,7 +92,8 @@
                     </div>
                     <hr class="line">
                     <div class="form-group">
-                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="6" placeholder="Enter Message"></textarea>
+                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="6"
+                            placeholder="Enter Message"></textarea>
                     </div>
                     <hr class="divider">
                     <div class="form-heading">
@@ -107,16 +115,79 @@
                         <label class="custom-control-label" for="defaultUnchecked">Accept Terms and Conditions</label>
                     </div>
                     <hr class="divider">
-                    <button type="button" class="btn btn-default btn-lg">Submit</button>
+                    <div class="cta">
+                        <button type="submit" id="validate" class="btn btn-default btn-lg">Submit</button>
+                    </div>
                 </div>
                 <div class="col-3">
-                    <h2>TEST</h2>
+                    <div class="row rowinfo">
+                        <div class="infocard">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#1abc9c">
+                                        <path
+                                            d="M86,0c-31.61312,0 -57.33333,25.72021 -57.33333,57.33333c0,9.49023 2.37606,18.89298 6.88672,27.23893l47.3112,85.58008c0.62989,1.14078 1.83016,1.84765 3.13542,1.84765c1.30526,0 2.50553,-0.70687 3.13542,-1.84765l47.33919,-85.59408c4.49316,-8.31795 6.85872,-17.7347 6.85872,-27.22493c0,-31.61312 -25.72021,-57.33333 -57.33333,-57.33333zM86,7.16667c27.66235,0 50.16667,22.50431 50.16667,50.16667c0,8.30396 -2.07861,16.54142 -5.99089,23.78157l-44.17578,79.89714l-44.16178,-79.86914c-3.92977,-7.27165 -6.00488,-15.50562 -6.00488,-23.80957c0,-27.66235 22.50431,-50.16667 50.16667,-50.16667zM86,28.66667c-15.80656,0 -28.66667,12.86011 -28.66667,28.66667c0,15.80656 12.86011,28.66667 28.66667,28.66667c15.80656,0 28.66667,-12.86011 28.66667,-28.66667c0,-15.80656 -12.86011,-28.66667 -28.66667,-28.66667zM86,35.83333c11.8558,0 21.5,9.64421 21.5,21.5c0,11.85579 -9.6442,21.5 -21.5,21.5c-11.8558,0 -21.5,-9.64421 -21.5,-21.5c0,-11.85579 9.6442,-21.5 21.5,-21.5z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <h3 class="cardheading">Address</h3>
+                            <p class="cardinfo">1234 Street Name, City Name, USA</p>
+                        </div>
+                    </div>
+                    <div class="row rowinfo">
+                        <div class="infocard">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#1abc9c">
+                                        <path
+                                            d="M149.49588,27.78203h-126.98068c-9.27228,0.01055 -16.78632,7.52459 -16.79687,16.79687v82.84219c0.01055,9.27228 7.52459,16.78632 16.79688,16.79688h126.98034c9.27228,-0.01055 16.78632,-7.52459 16.79688,-16.79688v-82.84219c-0.01018,-9.27231 -7.52423,-16.78651 -16.79654,-16.79687zM119.63104,85.97716l39.94297,-31.34902v70.12292zM22.5152,34.50078h126.98034c5.56339,0.00629 10.07183,4.51474 10.07813,10.07812v1.50836l-64.63773,50.73261c-4.86287,3.79636 -11.68688,3.79082 -16.54358,-0.01344l-65.95528,-50.73194v-1.49559c0.00629,-5.56339 4.51474,-10.07183 10.07813,-10.07812zM53.56859,86.18813l-41.13152,38.69832v-70.33557zM149.49588,137.49922h-126.98068c-3.49841,-0.00204 -6.74562,-1.81777 -8.57917,-4.79719l45.02705,-42.36172l15.3127,11.77797c7.28683,5.69184 17.51366,5.68921 24.79756,-0.00638l15.22435,-11.94627l43.79449,42.50953c-1.83039,2.99472 -5.08651,4.82198 -8.5963,4.82406z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <h3 class="cardheading">Email</h3>
+                            <p class="cardinfo">info@yourdomain.com</p>
+                        </div>
+                    </div>
+                    <div class="row rowinfo">
+                        <div class="infocard">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="49" height="49"
+                                viewBox="0 0 172 172" style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                    stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                    text-anchor="none" style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g fill="#1abc9c">
+                                        <path
+                                            d="M20.22606,0.00014c-0.57461,0 -1.14745,0.02679 -1.71642,0.07839c-5.11793,0.47013 -9.751,2.94071 -13.04371,6.94831c-3.29271,4.01047 -4.85215,9.08447 -4.38458,14.33333c2.72938,26.1096 11.60059,51.55431 25.64181,73.57031c12.74835,20.37627 30.09307,37.99373 50.13384,50.92812c21.59277,14.2244 46.5264,23.23375 72.16676,26.06315c0.58024,0.0516 1.16356,0.07839 1.74943,0.07839h0.05501c10.6133,-0.04587 19.20897,-8.85428 19.16672,-19.62435v-24.99375c0.22252,-9.91007 -6.88616,-18.42165 -16.57558,-19.80911c-7.66422,-1.02627 -15.22313,-2.93954 -22.46203,-5.68294c-7.01075,-2.6746 -14.97618,-0.95142 -20.311,4.40638l-8.90119,9.04232c-18.66904,-11.20293 -34.26516,-27.04364 -45.29815,-46.00664l8.90669,-9.04792c5.26722,-5.4094 6.96868,-13.50863 4.33507,-20.62656c-2.70121,-7.35587 -4.58637,-15.03208 -5.60038,-22.84375c-1.3492,-9.6836 -9.58596,-16.85094 -19.21623,-16.81367zM108.02767,0.00014c-1.55481,0 -2.81669,1.28427 -2.81669,2.86667c0,1.5824 1.26188,2.86667 2.81669,2.86667c31.06249,0 56.33386,25.71973 56.33386,57.33333c0,1.5824 1.26188,2.86667 2.81669,2.86667c1.55763,0 2.81669,-1.28427 2.81669,-2.86667c0,-34.77553 -27.79795,-63.06667 -61.96725,-63.06667zM20.22606,5.73348h24.67357h0.13203c6.7488,0 12.53473,5.08753 13.47832,11.85859c1.06753,8.213 3.04964,16.31532 5.90295,24.08112c1.86183,5.03387 0.66184,10.75309 -3.04775,14.56289l-10.43607,10.59883c-0.90134,0.91447 -1.08473,2.32523 -0.45661,3.44896c11.93715,21.328 29.34457,39.00656 50.33739,51.12969c1.10414,0.63927 2.48762,0.44402 3.38333,-0.46472l10.41956,-10.58203c3.76592,-3.78113 9.40652,-4.99942 14.36953,-3.10742c7.63887,2.89533 15.61377,4.91862 23.67233,5.99648c6.84456,0.9804 11.8787,7.00779 11.70688,14.02539v0.07278v25.03854c0.02817,7.6196 -6.05448,13.84828 -13.55534,13.87982c-0.4394,-0.0172 -0.8605,-0.02159 -1.2323,-0.05599c-24.71367,-2.72907 -48.8,-11.42985 -69.68015,-25.18411c-19.36758,-12.50153 -36.11371,-29.50965 -48.43392,-49.20365c-13.57364,-21.28213 -22.13899,-45.85619 -24.7726,-71.02838c-0.32674,-3.67507 0.77336,-7.25979 3.10276,-10.09492c2.32941,-2.83513 5.6035,-4.58335 9.22577,-4.91589c0.40279,-0.03727 0.80469,-0.05599 1.2103,-0.05599zM20.22606,11.46681c-0.2366,0 -0.47039,0.01066 -0.70417,0.03359c-2.87021,0.26373 -4.62466,1.92313 -5.41333,2.88346c-0.63376,0.77113 -2.07995,2.87173 -1.82645,5.76133c1.06471,10.16807 2.99177,20.06039 5.73241,29.40573c0.36617,1.24127 1.48167,2.04922 2.69566,2.04922c0.26759,0 0.5383,-0.04004 0.8087,-0.12318c1.49003,-0.45293 2.3375,-2.04447 1.89247,-3.56094c-2.64206,-9.00707 -4.5009,-18.55826 -5.52336,-28.33073c-0.06478,-0.72813 0.40098,-1.35078 0.54463,-1.52852c0.23097,-0.28093 0.74563,-0.76777 1.79344,-0.85664h23.01766c1.55481,0 2.81669,-1.27867 2.81669,-2.86107c0.00282,-1.5824 -1.25638,-2.87227 -2.81119,-2.87227zM108.02767,17.20014c-1.55481,0 -2.81669,1.28427 -2.81669,2.86667c0,1.5824 1.26188,2.86667 2.81669,2.86667c21.74487,0 39.4337,18.00267 39.4337,40.13333c0,1.5824 1.26188,2.86667 2.81669,2.86667c1.55763,0 2.81669,-1.28427 2.81669,-2.86667c0,-25.28973 -20.21541,-45.86667 -45.06709,-45.86667zM108.02767,34.40014c-1.55481,0 -2.81669,1.28427 -2.81669,2.86667c0,1.5824 1.26188,2.86667 2.81669,2.86667c12.42443,0 22.53355,10.28847 22.53355,22.93333c0,1.5824 1.26188,2.86667 2.81669,2.86667c1.55763,0 2.81669,-1.28427 2.81669,-2.86667c0,-15.8068 -12.63569,-28.66667 -28.16693,-28.66667zM155.91145,126.13348c-1.55481,0 -2.81669,1.28427 -2.81669,2.86667v23.38685c0.00282,0.645 -0.23995,1.25475 -0.68217,1.70768c-0.44222,0.45293 -1.02668,0.7026 -1.58439,0.70547l-0.25856,-0.0056c-9.62464,-1.06353 -18.92664,-2.94716 -27.6443,-5.60456c-1.4844,-0.4558 -3.05651,0.40398 -3.50436,1.92044c-0.44785,1.51647 0.39693,3.11073 1.88696,3.56653c9.0444,2.75773 18.6844,4.71638 28.70056,5.82292c0.23097,0.02293 0.70259,0.03359 0.77019,0.03359c2.13224,-0.0086 4.13209,-0.86255 5.63339,-2.40195c1.5013,-1.54227 2.32452,-3.58853 2.31607,-5.75573v-23.37565c0,-1.5824 -1.26188,-2.86667 -2.81669,-2.86667z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <h3 class="cardheading">Telephone</h3>
+                            <p class="cardinfo">+3630123456789</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>

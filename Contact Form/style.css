@@ -24,9 +24,22 @@ header{
 
 .col-3{
     margin: 5% 0;
-    padding: 4% 4%;
+}
+
+.rowinfo{
     background-color: white;
+    padding: 5%;
     border: 1px solid rgb(235, 235, 235);
+    margin-bottom: 20%;
+    text-align: center;
+}
+
+.infocard{
+    padding: 5% 0;
+}
+
+.cardheading{
+    padding-top: 10%;
 }
 
 .line{
@@ -66,4 +79,12 @@ header{
 
 .subheading{
     color: grey;
+}
+
+#validate{
+    background-color: #00C2A9;
+    width: 100%;
+    color: whitesmoke;
+    text-align: left;
+    padding: 2% 5%;
 }
