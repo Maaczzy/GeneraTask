@@ -12,7 +12,6 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
 
 </head>
 
@@ -70,15 +69,11 @@
                             </p>
                         </div>
                         <hr class="line">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="subject"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown button
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">General Information</a></li>
-                                <li><a class="dropdown-item" href="#">Career</a></li>
-                            </ul>
+                        <div class="dropdownmenu">
+                            <select name="subject-name" id="subject">
+                                <option value="general">General Information</option>
+                                <option value="general">Career</option>
+                            </select>
                         </div>
                         <hr class="divider">
                         <div class="form-heading">
@@ -115,9 +110,8 @@
                         </div>
                         <hr class="line">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="terms" required>
-                            <label class="custom-control-label" for="defaultUnchecked">Accept Terms and
-                                Conditions</label>
+                            <input type="checkbox" class="custom-control-input" id="defaultUnchecked" required>
+                            <label class="custom-control-label" for="defaultUnchecked">Accept <a href="#" class="link">Terms and Conditions</a></label>
                         </div>
                         <hr class="divider">
                         <div class="cta">
@@ -190,6 +184,7 @@
             </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
